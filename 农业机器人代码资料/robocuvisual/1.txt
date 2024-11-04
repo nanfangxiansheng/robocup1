@@ -1,0 +1,41 @@
+    if uart.any():
+        mode=int(uart.readline())
+        if mode==1:
+            fwl1=0
+            sumallt=20
+            tx=0
+            ty=0
+
+        if mode==2:
+            fwr1=0
+            sumalltr=20
+            tx=0
+            ty=0
+
+        if mode==3:
+            lastl=0
+            flag1=0
+            flag=0
+            sumallf=0
+            fx=0
+            fy=0
+            color=0
+            bcount=0
+            gcount=0
+            rcount=0
+        if mode==4:
+            lastr=0
+            flag2=0
+            flag=0
+            sumallf=0
+            fx=0
+            fy=0
+            color=0
+            bcount=0
+            rcount=0
+            gcount=0
+        if mode==5:
+            white_cross=0
+            sumall=60
+            cx=0
+            cy=0

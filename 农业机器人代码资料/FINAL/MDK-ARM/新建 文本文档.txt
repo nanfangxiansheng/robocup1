@@ -1,0 +1,69 @@
+#include "tjc_usart_hmi.h"// Device header
+extern uint8_t rj;//用于接收传输的旱情信息
+extern uint8_t line1[6];
+extern uint8_t line2[6];
+extern uint8_t line3[6];
+extern uint8_t Buf[32];
+void judge_receive(void){
+	if(rj==0){
+		line1[0]=Buf[0];
+		line1[1]=Buf[1];
+		line1[2]=Buf[2];
+		line1[3]=Buf[3];
+		line1[4]=Buf[4];
+		line1[5]=Buf[5];
+		TJCPrintf("zaizhi.n0.val=%d\xff\xff\xff",line1[0]);
+		TJCPrintf("zaizhi.n1.val=%d\xff\xff\xff",line1[1]);
+		TJCPrintf("zaizhi.n2.val=%d\xff\xff\xff",line1[2]);
+	  TJCPrintf("zaizhi.n3.val=%d\xff\xff\xff",line1[3]);
+	  TJCPrintf("zaizhi.n4.val=%d\xff\xff\xff",line1[4]);
+	  TJCPrintf("zaizhi.n5.val=%d\xff\xff\xff",line1[5]);
+		Buf_clear1();
+	
+	
+	}
+	if(rj==1){
+		line2[0]=Buf[0];
+		line2[1]=Buf[1];
+		line2[2]=Buf[2];
+		line2[3]=Buf[3];
+		line2[4]=Buf[4];
+		line2[5]=Buf[5];
+		TJCPrintf("zaizhi.n6.val=%d\xff\xff\xff",line2[0]);
+		TJCPrintf("zaizhi.n7.val=%d\xff\xff\xff",line2[1]);
+		TJCPrintf("zaizhi.n8.val=%d\xff\xff\xff",line2[2]);
+	  TJCPrintf("zaizhi.n9.val=%d\xff\xff\xff",line2[3]);
+	  TJCPrintf("zaizhi.n10.val=%d\xff\xff\xff",line2[4]);
+	  TJCPrintf("zaizhi.n11.val=%d\xff\xff\xff",line2[5]);
+		Buf_clear1();
+	
+	
+	}
+	if(rj==2){
+		line3[0]=Buf[0];
+		line3[1]=Buf[1];
+		line3[2]=Buf[2];
+		line3[3]=Buf[3];
+		line3[4]=Buf[4];
+		line3[5]=Buf[5];
+		TJCPrintf("zaizhi.n6.val=%d\xff\xff\xff",line3[0]);
+		TJCPrintf("zaizhi.n7.val=%d\xff\xff\xff",line3[1]);
+		TJCPrintf("zaizhi.n8.val=%d\xff\xff\xff",line3[2]);
+	  TJCPrintf("zaizhi.n9.val=%d\xff\xff\xff",line3[3]);
+	  TJCPrintf("zaizhi.n10.val=%d\xff\xff\xff",line3[4]);
+	  TJCPrintf("zaizhi.n11.val=%d\xff\xff\xff",line3[5]);
+		Buf_clear1();
+	}
+
+}
+/**
+@Brief  用于清除接收旱情信息的缓冲区
+@Param  NULL
+@Retval NULL
+*/
+void Buf_clear1(void){
+	uint8_t Bi=0;
+	for(Bi=0;Bi<31;Bi++){
+		Buf[Bi]=0;
+	}
+}

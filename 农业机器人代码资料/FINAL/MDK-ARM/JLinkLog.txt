@@ -1,0 +1,78 @@
+T41D4 000:030.218   SEGGER J-Link V7.82 Log File
+T41D4 000:030.355   DLL Compiled: Oct 13 2022 13:32:51
+T41D4 000:030.362   Logging started @ 2024-08-25 05:33
+T41D4 000:030.369 - 30.373ms
+T41D4 000:030.382 JLINK_SetWarnOutHandler(...)
+T41D4 000:030.390 - 0.011ms
+T41D4 000:030.397 JLINK_OpenEx(...)
+T41D4 000:031.634   Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+T41D4 000:032.014   Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+T41D4 000:033.936   Hardware: V7.00
+T41D4 000:033.960   S/N: 20090928
+T41D4 000:033.970   OEM: SEGGER
+T41D4 000:033.980   Feature(s): RDI,FlashDL,FlashBP,JFlash,GDBFull
+T41D4 000:037.990   TELNET listener socket opened on port 19021
+T41D4 000:038.091   WEBSRV WEBSRV_Init(): Starting webserver thread(s)
+T41D4 000:038.258   WEBSRV Webserver running on local port 19080
+T41D4 000:043.190 - 12.825ms returns "O.K."
+T41D4 000:043.253 JLINK_GetEmuCaps()
+T41D4 000:043.262 - 0.012ms returns 0x88EA5833
+T41D4 000:043.273 JLINK_TIF_GetAvailable(...)
+T41D4 000:043.651 - 0.382ms
+T41D4 000:043.662 JLINK_SetErrorOutHandler(...)
+T41D4 000:043.669 - 0.010ms
+T41D4 000:043.697 JLINK_ExecCommand("ProjectFile = "C:\Users\LX\Desktop\robocup\FINAL\MDK-ARM\JLinkSettings.ini"", ...). 
+T41D4 000:052.708 - 9.026ms returns 0x00
+T41D4 000:054.927 JLINK_ExecCommand("Device = STM32F103ZE", ...). 
+T41D4 000:056.676   Device "STM32F103ZE" selected.
+T41D4 000:057.023 - 2.072ms returns 0x00
+T41D4 000:057.039 JLINK_ExecCommand("DisableConnectionTimeout", ...). 
+T41D4 000:057.048 - 0.005ms returns 0x01
+T41D4 000:057.057 JLINK_GetHardwareVersion()
+T41D4 000:057.064 - 0.010ms returns 70000
+T41D4 000:057.075 JLINK_GetDLLVersion()
+T41D4 000:057.081 - 0.010ms returns 78200
+T41D4 000:057.089 JLINK_GetOEMString(...)
+T41D4 000:057.097 JLINK_GetFirmwareString(...)
+T41D4 000:057.103 - 0.010ms
+T41D4 000:061.736 JLINK_GetDLLVersion()
+T41D4 000:061.775 - 0.042ms returns 78200
+T41D4 000:061.784 JLINK_GetCompileDateTime()
+T41D4 000:061.790 - 0.010ms
+T41D4 000:063.056 JLINK_GetFirmwareString(...)
+T41D4 000:063.078 - 0.025ms
+T41D4 000:064.347 JLINK_GetHardwareVersion()
+T41D4 000:064.367 - 0.023ms returns 70000
+T41D4 000:065.906 JLINK_GetSN()
+T41D4 000:065.932 - 0.030ms returns 20090928
+T41D4 000:067.269 JLINK_GetOEMString(...)
+T41D4 000:070.387 JLINK_TIF_Select(JLINKARM_TIF_JTAG)
+T41D4 000:072.295 - 1.924ms returns 0x00
+T41D4 000:072.318 JLINK_HasError()
+T41D4 000:072.337 JLINK_SetSpeed(5000)
+T41D4 000:072.450 - 0.118ms
+T41D4 000:072.460 JLINK_GetIdData(pIdData)
+T41D4 000:074.178   InitTarget() start
+T41D4 000:074.219    J-Link Script File: Executing InitTarget()
+T41D4 000:077.698   Could not measure total IR len. TDO is constant high.
+T41D4 000:079.690   Error: Scanning JTAG chain failed.
+T41D4 000:081.006   Can not attach to CPU. Trying connect under reset.
+T41D4 000:135.352   Could not measure total IR len. TDO is constant high.
+T41D4 000:137.437   Error: Scanning JTAG chain failed.
+T41D4 000:138.743   Connecting to CPU via connect under reset failed.
+T41D4 000:191.506   InitTarget() end
+T41D4 000:192.999   Connect failed. Resetting via Reset pin and trying again.
+T41D4 000:257.576   InitTarget() start
+T41D4 000:257.620    J-Link Script File: Executing InitTarget()
+T41D4 000:261.289   Could not measure total IR len. TDO is constant high.
+T41D4 000:263.251   Error: Scanning JTAG chain failed.
+T41D4 000:264.572   Can not attach to CPU. Trying connect under reset.
+T41D4 000:319.914   Could not measure total IR len. TDO is constant high.
+T41D4 000:322.024   Error: Scanning JTAG chain failed.
+T41D4 000:323.355   Connecting to CPU via connect under reset failed.
+T41D4 000:375.561   InitTarget() end
+T41D4 000:375.605 - 303.148ms
+T41D4 001:285.913 JLINK_Close()
+T41D4 001:300.683 - 14.814ms
+T41D4 001:300.733   
+T41D4 001:300.741   Closed
